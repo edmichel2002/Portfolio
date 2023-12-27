@@ -5,7 +5,7 @@
 =========================================================
 
 * Copyright: 2023
-* Licensed: 
+* Licensed: Edmichel
 * Coded by Edmichel
 
 =========================================================
@@ -456,6 +456,7 @@ pre code {
           flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  margin-bottom: 20px 
 }
 
 .no-gutters {
@@ -10609,6 +10610,7 @@ button.bg-dark:focus {
 
 .font-weight-normal {
   font-weight: 400 !important;
+  height: 100px;
 }
 
 .font-weight-bold {
@@ -11047,6 +11049,8 @@ p {
 
 .portfolio-card .portfolio-card-img {
   width: 100%;
+  height: 200px;
+  object-fit: contain;
 }
 
 .portfolio-card .portfolio-card-overlay {
@@ -12024,6 +12028,7 @@ pre .code {
 .about-img{
   width: 350px;
   border-radius: 220px;
+  border: 4px solid #695aa6;
 }
 
 
