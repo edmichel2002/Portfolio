@@ -1,10 +1,10 @@
 /*!
 =========================================================
-* Meyawo Landing page
+* Eddy Landing page
 =========================================================
 
-* Copyright: 
-* Licensed: 
+* Copyright: Edmichel2023
+* Licensed: eddymichel2002@gmail.com
 * Coded by Edmichel
 
 =========================================================
