@@ -12070,7 +12070,7 @@ pre .code {
 
 /* sections */
 .section {
-  padding: 70px 10px;
+  padding: 70px 10px 0 10px;
 }
 
 .section .section-title {

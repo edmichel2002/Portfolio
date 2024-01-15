@@ -39,10 +39,10 @@ $('#nav-toggle').click(function(){
     $('ul.nav').toggleClass('show');
 });
 
-// Soumission du formulaire
-document.addEventListener('DOMContentLoaded', function () {
+/* Soumission du formulaire
+    document.addEventListener('DOMContentLoaded', function () {
     // Sélectionnez le formulaire par son ID
-     const contactForm = document.getElementById('contact-form');
+     const contactForm = document.getElementById('contactForm');
 
         // Ajoutez un écouteur d'événements pour le soumission du formulaire
         contactForm.addEventListener('submit', function (event) {
@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const formData = {
                 name: name,
                 email: email,
+                comment:comment
                
             };
 
@@ -79,4 +80,4 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.error('Erreur lors de l\'envoi de la requête:', error);
             });
         });
-    });
+    }); */
