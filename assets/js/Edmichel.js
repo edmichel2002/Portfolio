@@ -39,3 +39,44 @@ $('#nav-toggle').click(function(){
     $('ul.nav').toggleClass('show');
 });
 
+// Soumission du formulaire
+document.addEventListener('DOMContentLoaded', function () {
+    // Sélectionnez le formulaire par son ID
+     const contactForm = document.getElementById('contact-form');
+
+        // Ajoutez un écouteur d'événements pour le soumission du formulaire
+        contactForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // Récupérez les valeurs du formulaire
+           const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const comment = document.getElementById('comment').value;
+
+            // Créez un objet avec les données du formulaire
+            const formData = {
+                name: name,
+                email: email,
+               
+            };
+
+            // Effectuez une requête POST vers votre backend (exemple fictif)
+            fetch('https://localhost:3001/api/v1/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                
+                console.log('Réponse du backend:', data);
+
+                // Ajoutez ici le code pour afficher un message de confirmation ou effectuer toute autre action nécessaire
+            })
+            .catch(error => {
+                console.error('Erreur lors de l\'envoi de la requête:', error);
+            });
+        });
+    });
