@@ -61,7 +61,7 @@ $('#nav-toggle').click(function(){
                
             };
 
-            // Effectuez une requête POST vers votre backend (exemple fictif)
+            // Effectuez une requête POST vers le backend (exemple fictif)
             fetch('https://localhost:3001/api/v1/api/contact', {
                 method: 'POST',
                 headers: {
